@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>National Parks</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Search National Parks:</h1>
+
+        <form id="js-form">
+            <div class="form-container">
+                <div class="states">
+                    <label for="state-search">Select States:</label>
+                    <select multiple name="state-search" id="state-search">
+                        <option value="">None Selected</option>
+                        <option value="al">Alabama</option>
+                        <option value="ak">Alaska</option>
+                        <option value="as">American Samoa</option>
+                        <option value="az">Arizona</option>
+                        <option value="ar">Arkansas</option>
+                        <option value="ca">California</option>
+                        <option value="co">Colorado</option>
+                        <option value="ct">Connecticut</option>
+                        <option value="de">Delaware</option>
+                        <option value="dc">District of Columbia</option>
+                        <option value="fl">Florida</option>
+                        <option value="ga">Georgia</option>
+                        <option value="gu">Guam</option>
+                        <option value="hi">Hawaii</option>
+                        <option value="id">Idaho</option>
+                        <option value="il">Illinois</option>
+                        <option value="in">Indiana</option>
+                        <option value="ia">Iowa</option>
+                        <option value="ks">Kansas</option>
+                        <option value="ky">Kentucky</option>
+                        <option value="la">Louisiana</option>
+                        <option value="me">Maine</option>
+                        <option value="md">Maryland</option>
+                        <option value="ma">Massachusetts</option>
+                        <option value="mi">Michigan</option>
+                        <option value="mn">Minnesota</option>
+                        <option value="ms">Mississippi</option>
+                        <option value="mo">Missouri</option>
+                        <option value="mt">Montana</option>
+                        <option value="ne">Nebraska</option>
+                        <option value="nv">Nevada</option>
+                        <option value="nh">New Hampshire</option>
+                        <option value="nj">New Jersey</option>
+                        <option value="nm">New Mexico</option>
+                        <option value="ny">New York</option>
+                        <option value="nc">North Carolina</option>
+                        <option value="nd">North Dakota</option>
+                        <option value="mp">Northern Mariana Islands</option>
+                        <option value="oh">Ohio</option>
+                        <option value="ok">Oklahoma</option>
+                        <option value="or">Oregon</option>
+                        <option value="pa">Pennsylvania</option>
+                        <option value="pr">Puerto Rico</option>
+                        <option value="ri">Rhode Island</option>
+                        <option value="sc">South Carolina</option>
+                        <option value="sd">South Dakota</option>
+                        <option value="tn">Tennessee</option>
+                        <option value="tx">Texas</option>
+                        <option value="ut">Utah</option>
+                        <option value="vt">Vermont</option>
+                        <option value="vi">Virgin Islands</option>
+                        <option value="va">Virginia</option>
+                        <option value="wa">Washington</option>
+                        <option value="wv">West Virginia</option>
+                        <option value="wi">Wisconsin</option>
+                        <option value="wy">Wyoming</option>
+                    </select>
+                </div>
+
+                <div class="results-number">
+                    <label for="max-results">Maximum results to return</label>
+                    <input type="number" name="max-results" id="js-max-results" min="1" value="10">
+                </div>
+
+                <input class="submit" type="submit" value="Search Parks">
+            </div>
+        </form>
+
+        <p id="js-error-message" class="error-message"></p>
+
+        <section id="results" class="hidden">
+            <h2>Search Results</h2>
+            <ul id="results-list">
+
+            </ul>
+        </section>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../src/nationalParks.js"></script>
+</body>
+
+</html>
